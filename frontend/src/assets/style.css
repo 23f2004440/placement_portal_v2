@@ -1,0 +1,89 @@
+body {
+    background: #e0e5ec;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* 3D Neumorphism / Glassmorphism Elements */
+.card-3d {
+    background: #e0e5ec;
+    border-radius: 20px;
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px rgba(255,255,255, 0.5);
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-3d:hover {
+    transform: translateY(-5px);
+    box-shadow: 12px 12px 20px rgb(163,177,198,0.7), -12px -12px 20px rgba(255,255,255, 0.6);
+}
+
+.btn-3d {
+    background: #e0e5ec;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(163,177,198,0.6), -5px -5px 10px rgba(255,255,255, 0.5);
+    border: none;
+    font-weight: 600;
+    color: #495057;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-3d:active {
+    box-shadow: inset 5px 5px 10px rgb(163,177,198,0.6), inset -5px -5px 10px rgba(255,255,255, 0.5);
+    transform: translateY(2px);
+}
+
+.btn-3d-primary {
+    background: #4e73df;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(78, 115, 223, 0.4), -5px -5px 10px rgba(255,255,255, 0.5);
+}
+
+.btn-3d-primary:hover {
+    background: #3e5fc4;
+    color: white;
+}
+
+.btn-3d-danger {
+    background: #e74a3b;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(231, 74, 59, 0.4), -5px -5px 10px rgba(255,255,255, 0.5);
+}
+
+.btn-3d-success {
+    background: #1cc88a;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(28, 200, 138, 0.4), -5px -5px 10px rgba(255,255,255, 0.5);
+}
+
+.input-3d {
+    background: #e0e5ec;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 10px rgb(163,177,198,0.6), inset -5px -5px 10px rgba(255,255,255, 0.5);
+    border: none;
+    padding: 10px 15px;
+}
+
+.input-3d:focus {
+    outline: none;
+    box-shadow: inset 7px 7px 14px rgb(163,177,198,0.7), inset -7px -7px 14px rgba(255,255,255, 0.6);
+    background: #e0e5ec;
+}
+
+/* Navbar */
+.navbar-3d {
+    background: #e0e5ec;
+    box-shadow: 5px 5px 15px rgb(163,177,198,0.6), -5px -5px 15px rgba(255,255,255, 0.5);
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 30px;
+}
+
+.nav-link-3d {
+    font-weight: bold;
+    color: #555;
+    transition: color 0.2s ease;
+}
+.nav-link-3d:hover {
+    color: #4e73df;
+}
