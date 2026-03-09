@@ -1,0 +1,11 @@
+.\venv\Scripts\Activate.ps1
+
+pip install -r requirements.txt
+
+celery -A celery_worker:celery beat --loglevel=info
+Remove-Item -Recurse -Force venv
+
+sudo apt update
+
+passwd hpredisadmin
+celery -A celery_worker:celery worker --loglevel=info
